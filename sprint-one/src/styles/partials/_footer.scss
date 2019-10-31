@@ -1,0 +1,22 @@
+.footer {
+  background-color: #ef9a9a;
+  border: 1px solid #bf360c;
+  color: #d32f2f;
+  font-style: normal;
+  font-weight: 900;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+}
+
+@include medium {
+  .footer {
+    width: 100vw;
+    padding: 30px;
+    flex-direction: row;
+    height: 10vh;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,51 @@
+.header__container {
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+ .header__search {
+     width: 86.875vw;
+     height: 48px;
+     margin-bottom: 8px;
+     border-radius: 5px;
+}
+
+.logo {
+    margin:  24px 0 24px;
+}
+.header__content {
+    text-align: center;
+}
+
+.header__avatar-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.header__upload-btn {
+    justify-self: flex-start;
+    width: 60vw;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $brainflix-blue;
+    color: $white;
+    border: none;
+    font-size: 16px;
+    margin-right: 5vw;
+}
+
+
+
+
+
+/* -------- Media Querry: Tablet -------- */
+@include medium {
+}
+
+
+/* -------- Media Querry: Desktop -------- */
+
+@include large {
+}

@@ -1,0 +1,123 @@
+// .video__img-box {
+//   width: 100%;
+//   height: 57.1875vw;
+
+// }
+.video__container {
+  position: relative;
+}
+
+.video__img {
+    width: 100%;
+    height: 57.1875vw;
+    margin: 16px 0 32px 0;
+  }
+
+  video {
+    position: absolute;
+    width: 90vw;
+    top:120px;
+    height: 18vh;
+    margin: 0 5vw;
+  }
+  
+.section {
+  margin: 0 5vw;
+
+  &__heading {
+    margin: unset;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.author-date {
+  padding-bottom: 32px;
+}
+
+.date {
+  color: $silver;
+}
+
+.views-likes {
+  display: flex;
+  width: 75vw;
+  margin-bottom: 24px;
+  // border-bottom: 2px solid $mercury;
+}
+
+.views, .likes {
+  padding-right: 2.5vw;
+}
+
+.number {
+  padding-right: 7.5vw;
+}
+
+.comment__avatar-img {
+    // flex: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+.form {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  justify-content: center;
+
+}
+
+.comments-heading {
+  margin: 40px 0 32px;
+}
+
+.form-label {
+  color: $silver;
+  margin: unset;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  margin-left: 5vw;
+}
+
+.form-input {
+  height: 30vw;
+  width: 65vw;
+  margin-bottom: 15px;
+  border: 2px solid $brainflix-blue;
+  background-color: $alabaster;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.comment__avatar-img {
+  margin-top: 10%;
+}
+
+.form-submit {
+     font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 0 10px;
+    margin: 0 0 24px 0;
+    display: block;
+    height: 48px;
+    width: 65vw;
+    background-color: $brainflix-blue;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+}
