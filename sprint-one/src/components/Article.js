@@ -1,14 +1,12 @@
 import React from "react";
 import hero from "../assets/Images/video-list-0.jpg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
-// import play from "../assets/Icons/SVG/Icon-play.svg";
-// import fullscreen from "../assets/Icons/SVG/Icon-fullscreen.svg";
-// import volume from "../assets/Icons/SVG/Icon-volume.svg";
 import views from "../assets/Icons/SVG/Icon-views.svg";
 import likes from "../assets/Icons/SVG/Icon-likes.svg";
+// import MainVideo from "../assets/Video/BrainStation Sample Video.mp4";
 
 
-export default function Main() {
+export default function Main(props) {
     return (
       <>
         <section className="video__container">
@@ -19,42 +17,30 @@ export default function Main() {
             <video controls width="320">
               {" "}
             </video>
-            {/* <img className="video__controller-play" src={play} />
-          <div className="video__controller-blackbox"></div>
-          <img className="video__controller-fullscreen" src={fullscreen} />
-          <img className="video__controller-volume" src={volume} /> */}
           </div>
         </section>
 
         <section className="section">
-          <h1 class="section__heading">BMX Rampage: 2018 Heighlights</h1>
+          <h1 class="section__heading">{props.data.title}</h1>
 
           <div className="author-date">
-            <span className="author">By Red Cow</span>
-            <span className="date"> 12/18/2018</span>
+            <span className="author">{props.data.channel}</span>
+            <span className="date">{props.data.timestamp}</span>
           </div>
 
           <div className="views-likes">
             <img className="views" src={views} />
-            <span className="number">1,001,023</span>
+            <span className="number">{props.data.views}</span>
             <img className="likes" src={likes} />
-            <span className="number"> 110,985</span>
+            <span className="number">{props.data.likes}</span>
           </div>
 
           <article className="description">
-            <p className="description-text">
-              On a gusty day in Southern Utah, a group of 25 daring mountain
-              bikers blew the doors off what is possible on two wheels,
-              unleashing some of the biggest moments the sport has ever seen.
-              While mother nature only allowed for one full run before the
-              conditions made it impossible to ride, that was all that was
-              needed for event veteran Kyle Strait, who won the event for the
-              second time -- eight years after his first Red Cow Rampage title
-            </p>
+            <p className="description-text">{props.data.description}</p>
           </article>
 
           <article className="article">
-            <h1 className="comments-heading">3 Comments</h1>
+            <h1 className="comments-heading">{props.data.comments.length} Comments</h1>
             <form className="form-container">
               <div>
                 <img className="comment__avatar-img" src={avatar} />
