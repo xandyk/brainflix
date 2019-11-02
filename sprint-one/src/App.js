@@ -14,7 +14,6 @@ import NextVideoFive from "./assets/Images/video-list-5.jpg";
 import NextVideoSix from "./assets/Images/video-list-6.jpg";
 import NextVideoSeven from "./assets/Images/video-list-7.jpg";
 import NextVideoEight from "./assets/Images/video-list-8.jpg";
-import MainVideo from "./assets/Video/BrainStation Sample Video.mp4";
 
 
 
@@ -81,13 +80,6 @@ class App extends React.Component {
       },
 
       {
-        id: "0400",
-        title: "Cheap Airline Tickets Great Ways To Save",
-        channel: "Emily Harper",
-        image: NextVideoFour
-      },
-
-      {
         id: "0500",
         title: "Take A Romantic Break In A Boutique Hotel",
         channel: "Ethan Owen",
@@ -117,6 +109,7 @@ class App extends React.Component {
     ],
 
     mainVideo: {
+
       id: "0000",
       title: "BMX Rampage: 2018 Highlights",
       description:
@@ -129,6 +122,7 @@ class App extends React.Component {
       video: '',
       timestamp: "12/18/2018",
       comments: [
+
         {
           image: reviewer,
           name: "Micheal Lyons",

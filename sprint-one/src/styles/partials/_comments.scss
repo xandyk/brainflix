@@ -1,11 +1,74 @@
-.comment-data {
+.comment-container {
     margin: 0 5vw;
     display: flex;
-    flex-direction: column;
+    border-bottom: 2px solid $mercury;
+}
+
+.comment-box {
+    margin-left: 5vw;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-name, .comment-date {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: unset;
+}
+
+
+.comment-date {
+    color: $silver;
+    font-family: 'AvenirNextRegular';
 }
 
 .comment-avatar {
+    margin-top: 24px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
+}
+
+.coment.coment {
+    margin-top: 0;
+}
+
+/* -------- Media Querry: Tablet -------- */
+
+@include medium {
+
+.comment-container {
+    margin: 3.125vw;
+    display: flex;
+}
+.comment-box {
+    width: 81.25vw;
+}
+.comment-header {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+ .comment-date {
+        margin-left: 2vw;
+    }
+.comment__avatar-img {
+    margin-top: 27px;
+}
+
+.comment-box, .form {
+    margin-left: 2.083vw;
+}
+
+.form-input {
+    width: 57vw;
+    margin-bottom: 24px;
+}
+
+
+
 }

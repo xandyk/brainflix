@@ -2,38 +2,63 @@
     margin: 0 5vw;
     display: flex;
     flex-direction: column;
+
+    &__logo {
+    margin:  24px 0 24px;
+    }
+  
 }
 
- .header__search {
-     width: 86.875vw;
-     height: 48px;
-     margin-bottom: 8px;
-     border-radius: 5px;
+.header__search-bar {
+    position: relative;
+    width: 90vw;
+    height: 48px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+
+    &-content {
+    text-align: center;
+    }
 }
 
-.logo {
+.header__logo {
     margin:  24px 0 24px;
 }
-.header__content {
-    text-align: center;
+
+.header__wrap-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.header__avatar-img{
+.header__search-icon {
+    position: absolute;
+    display: flex;
+    top: 87px;
+    left: 34px;
+}
+
+.header__search-bar {
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.header__avatar-img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    margin-left: 5vw;
 }
 
 .header__upload-btn {
-    // justify-self: flex-start;
-    width: 60vw;
+    width: 75vw;
     height: 48px;
     border-radius: 5px;
     background-color: $brainflix-blue;
     color: $white;
     border: none;
     font-size: 16px;
-    margin-right: 5vw;
 }
 
 
@@ -42,10 +67,86 @@
 
 /* -------- Media Querry: Tablet -------- */
 @include medium {
+.header__container {
+    height: 80px;
+    margin: 2.083vw 3.125vw 0;
+    display: flex;
+    flex-direction: row;
+    }
+
+.header__search-bar {
+    position: relative;
+    width: 27vw;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: unset;
+    margin-left: 22.005vw;
+    margin-right: 3.125vw;
+    }
+
+.header__search-content {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.header__upload-btn {
+    width: 15vw;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $brainflix-blue;
+    color: $white;
+    font-size: 16px;
+    }
+
+.header__search-icon {
+    position: absolute;
+    top: 49px;
+    left: 324px;
+    }
+
 }
 
 
 /* -------- Media Querry: Desktop -------- */
 
 @include large {
+    
+    .header__container {
+    margin: 0 12.5vw;
+    display: flex;
+    flex-direction: row;
+    }
+
+    .header__search-bar {
+    position: relative;
+    width: 20vw;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: unset;
+    margin-left: 35.3472vw;
+    margin-right: 3.125vw;
+    }
+
+    .header__search-icon {
+    position: absolute;
+    top: 29px;
+    left: 824px;
+    }
+
+    .header__upload-btn {
+    width: 8vw;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $brainflix-blue;
+    color: $white;
+    font-size: 16px;
+    }
+
+    .header__avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 1.667vw;
+}
 }

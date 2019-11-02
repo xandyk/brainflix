@@ -7,11 +7,13 @@ console.log(props.data);
   const commentElements = props.data.map(function(comment){
       return (
         <div className="comment-container">
-          <img className="comment-avatar" src={reviewer} />
-          <div className="comment-data">
-            <h5 className="name">{comment.name}</h5>
-            <h5 className="date">{comment.date}</h5>
-            <p className="comment">{comment.comment}</p>
+          <img className="comment-avatar" src={reviewer} alt="reviewer" />
+          <div className="comment-box">
+            <div className="comment-header">
+              <h5 className="comment-name">{comment.name}</h5>
+              <h5 className="comment-date">{comment.date}</h5>
+            </div>
+            <p className="comment-comment">{comment.comment}</p>
           </div>
         </div>
       );}

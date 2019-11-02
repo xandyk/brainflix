@@ -1,0 +1,35 @@
+.video-info {
+    margin: 0 5vw;
+    
+}
+
+   .video-header {
+    color: $silver;
+    margin: 40px 0;
+    }
+  
+
+.video {
+    display: flex;
+
+    &-img {
+    width: 37.5vw;
+    height: 21.875vw;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    }
+}
+
+.title-wrap {
+    margin-left: 5vw;
+    width: 50vw;
+}
+
+.title {
+    margin: unset;
+    font-size: 14px;
+}
