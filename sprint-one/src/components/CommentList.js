@@ -3,8 +3,10 @@ import reviewer from '../assets/Images/vg.png'
 
 
 export default function CommentList(props) {
-console.log(props.data);
+
+  console.log(props.data);
   const commentElements = props.data.map(function(comment){
+    
       return (
         <div className="comment-container">
           <img className="comment-avatar" src={reviewer} alt="reviewer" />

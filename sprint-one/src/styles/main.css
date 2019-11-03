@@ -493,19 +493,16 @@ video {
   }
 }
 
-.video-info {
-  margin: 0 5vw;
-}
-
 .video-header {
   color: #AFAFAF;
-  margin: 40px 0;
+  margin: 40px 5vw;
 }
 
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 5vw;
 }
 
 .video-img {
@@ -513,19 +510,45 @@ video {
   height: 21.875vw;
   border-radius: 5px;
   margin-bottom: 24px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .title-wrap {
   margin-left: 5vw;
-  width: 50vw;
+  width: 100%;
 }
 
 .title {
   margin: unset;
-  font-size: 14px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 11px;
+}
+
+/* -------- Media Querry: Tablet -------- */
+@media only screen and (min-width: 768px) {
+  .video {
+    margin: 0 3.125vw;
+  }
+  .video-header {
+    margin: 40px 3.125vw;
+  }
+  .video-img {
+    width: 15.625vw;
+    height: 9.114583vw;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+  .title-wrap {
+    margin-left: 2.5vw;
+    width: 60%;
+  }
+  .title, .author {
+    width: 40%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 /*# sourceMappingURL=main.css.map */
