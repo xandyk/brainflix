@@ -21,11 +21,9 @@ export default function NextVideo(props) {
   );
 
   return (
-    <section>
-      <div className="video-info">
+    <section className="video-section">
         <h4 className="video-header">NEXT VIDEO</h4>
         {videoElements}
-      </div>
     </section>
   )      
 }

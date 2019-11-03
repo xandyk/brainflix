@@ -25,12 +25,13 @@
 
 .title {
     margin: unset;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.5;
+    // font-family: 'AvenirNextMedium';
 }
 
 .author {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 
@@ -78,8 +79,10 @@
 @include large {
 
     .video-section {
-        display: block; 
         float: right;  
+        position: absolute;
+        top: 961px;
+        left: 900px;
     }
 
     .video{ 
@@ -87,18 +90,26 @@
     }
     
     .video-header {
-        margin-left: unset;
+        margin: unset;
+        margin-left: 1.667vw;
+        margin-bottom: 40px;
     }
 
     .video-img {
-        width: 8.33vw;
+        width: 8.3333vw;
         height: 4.861vw;
-        margin-left: 25px;
+        margin-left: 1.667vw;
+        margin-right: 1.67vw;
     }
    
     .title-wrap {
-        margin-left: 2vw;
+        margin-left: unset;
     }
     
+    .title {
+        width: 70%;
+        font-size: 13px;
+    }
+
    
 }

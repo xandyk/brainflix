@@ -54,6 +54,7 @@
 .description-text {
   font-family: 'AvenirNextRegular';
   padding-top: 24px;
+  font-size: 14px;
 }
 
 .comment__avatar-img {
@@ -73,9 +74,11 @@
   flex-direction: column;
   flex: 3;
   justify-content: center;
-
 }
 
+.form-label {
+  font-size: 14px;
+}
 .comments-heading {
   margin: 40px 0 32px;
 }
@@ -213,9 +216,20 @@ video {
 @include large {
 
 .section {
+  margin-left: 12.5vw;
+  position: relative;
   display: inline-block;
   width: 49.44vw;
 }
+
+.video__img {
+  margin-bottom: 40px;
+}
+
+.description-text {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
 
 video {
   top: 740px;
@@ -223,5 +237,7 @@ video {
   width: 67.578125vw;
   height: 5vw;
 }
+
+
 
 }

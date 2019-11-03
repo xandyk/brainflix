@@ -35,7 +35,7 @@ body {
 }
 
 .header__container {
-  margin: 0 5vw;
+  margin: 0 3.125vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,7 @@ body {
 
 .header__search-bar {
   position: relative;
-  width: 90vw;
+  width: 93.5vw;
   height: 48px;
   margin-bottom: 8px;
   border-radius: 5px;
@@ -161,7 +161,7 @@ body {
 }
 
 /* -------- Media Querry: Desktop -------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   .header__container {
     margin: 0 12.5vw;
     display: -webkit-box;
@@ -221,7 +221,7 @@ video {
 }
 
 .section {
-  margin: 0 3.125vw;
+  margin: 0 5vw;
 }
 
 .section__heading {
@@ -258,7 +258,9 @@ video {
 }
 
 .description-text {
+  font-family: 'AvenirNextRegular';
   padding-top: 24px;
+  font-size: 14px;
 }
 
 .comment__avatar-img {
@@ -293,6 +295,10 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.form-label {
+  font-size: 14px;
 }
 
 .comments-heading {
@@ -347,6 +353,10 @@ video {
   text-transform: uppercase;
 }
 
+.comment-comment {
+  font-family: 'AvenirNextRegular';
+}
+
 /* -------- Media Querry: Tablet -------- */
 @media only screen and (min-width: 768px) {
   video {
@@ -357,7 +367,13 @@ video {
     height: 10vw;
   }
   .video__img {
-    margin-bottom: 48px;
+    background-color: #323232;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 48px;
+  }
+  .section {
+    margin: 0 3.125vw;
   }
   .section__heading {
     margin-bottom: 24px;
@@ -384,6 +400,7 @@ video {
     padding-left: 3.125vw;
   }
   .description-text {
+    font-family: 'AvenirNextRegular';
     margin-top: 24px;
     padding: 40px 0 64px;
     border-top: 2px solid #e1e1e1;
@@ -407,7 +424,20 @@ video {
 }
 
 /* -------- Media Querry: Desktop -------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
+  .section {
+    margin-left: 12.5vw;
+    position: relative;
+    display: inline-block;
+    width: 49.44vw;
+  }
+  .video__img {
+    margin-bottom: 40px;
+  }
+  .description-text {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
   video {
     top: 740px;
     left: 100px;
@@ -440,7 +470,15 @@ video {
 .comment-name, .comment-date {
   display: inline-block;
   font-size: 15px;
+  margin-top: unset;
+  margin-top: 20px;
   margin-bottom: unset;
+}
+
+.comment-comment {
+  font-size: 14px;
+  line-height: 1.45;
+  margin-bottom: 20px;
 }
 
 .comment-date {
@@ -449,20 +487,16 @@ video {
 }
 
 .comment-avatar {
-  margin-top: 24px;
+  margin-top: 20px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
 
-.coment.coment {
-  margin-top: 0;
-}
-
 /* -------- Media Querry: Tablet -------- */
 @media only screen and (min-width: 768px) {
   .comment-container {
-    margin: 3.125vw;
+    margin: 0 3.125vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,7 +516,7 @@ video {
     margin-left: 2vw;
   }
   .comment__avatar-img {
-    margin-top: 27px;
+    margin-top: 24px;
   }
   .comment-box, .form {
     margin-left: 2.083vw;
@@ -490,6 +524,40 @@ video {
   .form-input {
     width: 57vw;
     margin-bottom: 24px;
+  }
+}
+
+/* -------- Media Querry: Desktop -------- */
+@media only screen and (min-width: 1440px) {
+  .comment-section {
+    margin-left: 12.5vw;
+    width: 49vw;
+    display: inline-block;
+  }
+  .comment-box {
+    margin-right: 1.67vw;
+    width: 40vw;
+  }
+  .comment-avatar {
+    margin-top: 30px;
+  }
+  .form-input {
+    display: inline-block;
+    width: 30.28vw;
+    margin-bottom: unset;
+  }
+  .form-submit {
+    margin: unset;
+    margin-right: 2.5vw;
+    margin-bottom: 24px;
+    width: 10vw;
+  }
+  .comment-container {
+    width: 49.44vw;
+    margin: unset;
+  }
+  .cooment-avatar {
+    margin-top: 0;
   }
 }
 
@@ -514,17 +582,17 @@ video {
 
 .title-wrap {
   margin-left: 5vw;
-  width: 100%;
+  width: 50%;
 }
 
 .title {
   margin: unset;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
 .author {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /* -------- Media Querry: Tablet -------- */
@@ -533,6 +601,8 @@ video {
     margin: 0 3.125vw;
   }
   .video-header {
+    display: inline-block;
+    width: 30vw;
     margin: 40px 3.125vw;
   }
   .video-img {
@@ -543,12 +613,46 @@ video {
   }
   .title-wrap {
     margin-left: 2.5vw;
-    width: 60%;
+    width: 70%;
   }
   .title, .author {
     width: 40%;
     font-size: 14px;
     line-height: 1.4;
+  }
+  .author {
+    font-family: 'AvenirNextRegular';
+  }
+}
+
+/* -------- Media Querry: Desktop -------- */
+@media only screen and (min-width: 1440px) {
+  .video-section {
+    float: right;
+    position: absolute;
+    top: 961px;
+    left: 900px;
+  }
+  .video {
+    margin-left: unset;
+  }
+  .video-header {
+    margin: unset;
+    margin-left: 1.667vw;
+    margin-bottom: 40px;
+  }
+  .video-img {
+    width: 8.3333vw;
+    height: 4.861vw;
+    margin-left: 1.667vw;
+    margin-right: 1.67vw;
+  }
+  .title-wrap {
+    margin-left: unset;
+  }
+  .title {
+    width: 70%;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,7 +22,7 @@ export default function CommentList(props) {
   );
 
   return (
-    <section>
+    <section className="comment-section">
       {commentElements}
     </section>
   )

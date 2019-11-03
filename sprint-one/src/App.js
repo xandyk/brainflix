@@ -95,7 +95,7 @@ class App extends React.Component {
 
       {
         id: "0700",
-        title: "Cruising Destination IdeasChoose The Perfect Accommodations",
+        title: "Cruising Destination Ideas",
         channel: "Timothy Austin",
         image: NextVideoSeven
       },
