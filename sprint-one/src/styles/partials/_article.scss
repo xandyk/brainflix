@@ -17,7 +17,7 @@
   }
   
 .section {
-  margin: 0 3.125vw;
+  margin: 0 5vw;
 
   &__heading {
     margin: unset;
@@ -52,6 +52,7 @@
 }
 
 .description-text {
+  font-family: 'AvenirNextRegular';
   padding-top: 24px;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .form-submit {
-     font-size: 16px;
+    font-size: 16px;
     text-align: center;
     border: none;
     padding: 0 10px;
@@ -122,6 +123,9 @@
     text-transform: uppercase;
 }
 
+.comment-comment {
+  font-family: 'AvenirNextRegular';
+}
 
 
 
@@ -138,10 +142,16 @@ video {
   }
 
   .video__img {
-    margin-bottom: 48px;
+    background-color: $black;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 48px;
   }
 
- 
+  .section {
+   margin: 0 3.125vw;
+  }
+
   .section__heading {
     margin-bottom: 24px;
       }
@@ -170,6 +180,7 @@ video {
   }
 
   .description-text {
+    font-family: 'AvenirNextRegular';
     margin-top: 24px;
     padding: 40px 0 64px;
     border-top: 2px solid $mercury;
@@ -201,11 +212,16 @@ video {
 
 @include large {
 
+.section {
+  display: inline-block;
+  width: 49.44vw;
+}
+
 video {
   top: 740px;
   left: 100px;
   width: 67.578125vw;
-  height: 5vw
+  height: 5vw;
 }
 
 }

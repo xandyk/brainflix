@@ -69,6 +69,43 @@
     margin-bottom: 24px;
 }
 
+}
 
+/* -------- Media Querry: Desktop -------- */
 
+@include large {
+
+    .comment-section {
+        width: 49vw;
+        display: inline-block;
+    }
+
+    .comment-box {
+        margin-right: 1.67vw;
+        width: 40vw;
+    }
+
+   
+    .comment-avatar {
+        margin-top: 30px;
+    }
+
+    .form-input {
+        display: inline-block;
+        width: 30.28vw;
+        margin-bottom: unset;
+    }
+
+    .form-submit {
+        margin: unset;
+        margin-right: 2.5vw;
+        margin-bottom: 24px;
+        width: 10vw;
+    }
+
+    .comment-container {
+        width: 49.44vw;
+        margin-top: unset;
+        margin-bottom: unset;
+    }
 }

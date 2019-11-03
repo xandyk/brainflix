@@ -20,7 +20,7 @@
 
 .title-wrap {
     margin-left: 5vw;
-    width: 100%;
+    width: 50%;
 }
 
 .title {
@@ -38,14 +38,17 @@
 /* -------- Media Querry: Tablet -------- */
 
 @include medium {
-
 .video {
     margin: 0 3.125vw;
     }
 
+
+
 .video-header {
+    display: inline-block;
+    width: 30vw;
     margin: 40px 3.125vw;
-}
+    }
 
 .video-img {        
     width: 15.625vw;
@@ -54,9 +57,9 @@
     margin-bottom: 24px;
     }
 
-    .title-wrap {
+.title-wrap {
     margin-left: 2.5vw;
-    width: 60%;
+    width: 70%;
     }
 
 .title, .author {
@@ -64,4 +67,38 @@
     font-size: 14px;
     line-height: 1.4;
     }
+
+.author {
+    font-family: 'AvenirNextRegular';
+}
+}
+
+/* -------- Media Querry: Desktop -------- */
+
+@include large {
+
+    .video-section {
+        display: block; 
+        float: right;  
+    }
+
+    .video{ 
+        margin-left: unset;
+    }
+    
+    .video-header {
+        margin-left: unset;
+    }
+
+    .video-img {
+        width: 8.33vw;
+        height: 4.861vw;
+        margin-left: 25px;
+    }
+   
+    .title-wrap {
+        margin-left: 2vw;
+    }
+    
+   
 }
