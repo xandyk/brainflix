@@ -5,7 +5,7 @@ import reviewer from '../assets/Images/vg.png'
 export default function CommentList(props) {
 
   console.log(props.data);
-  const commentElements = props.data.map(function(comment){
+  const commentElements = props.data && props.data.map(function(comment){
     
       return (
         <div className="comment-container">
@@ -28,3 +28,11 @@ export default function CommentList(props) {
   )
 }
      
+function timeStamp(seconds) {
+  let date = new Date(seconds);
+  let m = date.getMonth() + 1;
+  let d = date.getDate();
+  let y = date.getFullYear();
+
+  return m + "/" + d + "/" + y
+}

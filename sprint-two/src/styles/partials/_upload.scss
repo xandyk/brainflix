@@ -1,0 +1,139 @@
+
+.upload {
+    margin: 0 3.125vw;
+    height: 140vw;
+
+    &__title {
+    border-top: 2px solid $mercury;
+    padding-top: 24px;
+    }
+
+    &__header {
+        color: $silver;
+        margin-bottom: unset;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        width: 90vw;
+        border-radius: 6px;
+        margin-bottom: unset;
+        margin-bottom: 32px;
+    }
+
+    &__label {
+        font-size: 13px;
+        color: $silver;
+        margin: unset;
+    }
+
+    &__input {
+        height: 15vw;
+        width: 100%;
+        margin-bottom: 24px;
+        border: 2px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    &__description {
+        height: 44.6875vw;
+        width: 100%;
+        border: 2px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 14px;
+
+    }
+
+    &__publish {
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        background-color: $brainflix-blue;
+        color: $white;
+        border: none;
+        font-size: 16px;
+        margin: 32px 0 24px 0;
+    }
+
+    &__cancel {
+        background-color: $white;
+        color: $brainflix-blue;
+        height: 48px;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        border: none;
+    }
+}
+
+
+
+/* -------- Media Querry: Tablet -------- */
+@include medium {
+
+
+.header__container {
+    height: 80px;
+    margin: 2.083vw 3.125vw 0 3.125vw;
+    display: flex;
+    flex-direction: row;
+
+   
+}
+
+ .header__search-bar {
+        width: 32.8125vw;
+    }
+
+    
+ .upload {
+
+    &__title {
+    margin-top: unset;
+    padding-top: 48px;
+}
+    }
+
+    &__img {
+         width: 44.79167vw;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &__input, &__description {
+        font-size: 24px;
+        padding-left: 35px;
+    }
+
+    &__publish, &__cancel {
+        width: 20.83vw;
+        margin: 40px 0 0 6.25vw;
+        font-size: 22px;
+    }
+    }
+
+
+
+
+
+/* -------- Media Querry: Large -------- */
+
+@include large {
+
+
+
+.upload {
+    margin: 0 12.5vw;
+}
+
+
+}

@@ -22,7 +22,7 @@
 }
 
 .header__logo {
-    margin:  24px 0 24px;
+    margin: 24px 0 24px;
 }
 
 .header__wrap-search {
@@ -35,20 +35,25 @@
 .header__search-icon {
     position: absolute;
     display: flex;
-    top: 87px;
-    left: 34px;
+    top: 90px;
+    left: 30px;
 }
 
 .header__search-bar {
     padding-left: 40px;
     font-size: 16px;
+        width: 100%;
+        border: 2px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 5px;
+        padding: 0 48px;
 }
 
 .header__avatar-img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    margin-left: 5vw;
+    margin-left: 3vw;
 }
 
 .header__upload-btn {
@@ -56,12 +61,15 @@
     height: 48px;
     border-radius: 5px;
     background-color: $brainflix-blue;
-    color: $white;
     border: none;
     font-size: 16px;
+
 }
 
-
+.header__link {
+    text-decoration: none;
+    color: $white;
+}
 
 
 
@@ -74,15 +82,7 @@
     flex-direction: row;
     }
 
-.header__search-bar {
-    position: relative;
-    width: 27vw;
-    height: 48px;
-    border-radius: 5px;
-    margin-bottom: unset;
-    margin-left: 22.005vw;
-    margin-right: 3.125vw;
-    }
+
 
 .header__search-content {
         display: inline-flex;
@@ -105,6 +105,15 @@
     left: 324px;
     }
 
+.header__search-bar {
+    position: relative;
+    width: 32.8125vw;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: unset;
+    margin-left: 22.005vw;
+    margin-right: 3.125vw;
+    }
 }
 
 

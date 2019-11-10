@@ -1,9 +1,7 @@
-import React from "react";
-import hero from "../assets/Images/video-list-0.jpg";
+import React from "react"; //functions ->rfc
 import avatar from "../assets/Images/Mohan-muruge.jpg";
 import views from "../assets/Icons/SVG/Icon-views.svg";
 import likes from "../assets/Icons/SVG/Icon-likes.svg";
-// import MainVideo from "../assets/Video/BrainStation Sample Video.mp4";
 
 
 export default function Main(props) {
@@ -11,7 +9,7 @@ export default function Main(props) {
       <>
         <section className="video__container">
           <div className="video__img-box">
-            <img className="video__img" src={hero} alt="main video" />
+            <img className="video__img" src={props.data.image} alt="main video" />
           </div>
           <div className="video__controller">
             <video controls width="320">
@@ -41,7 +39,7 @@ export default function Main(props) {
 
           <article className="article">
             <h1 className="comments-heading">
-              {props.data.comments.length} Comments
+              {props.data.comments && props.data.comments.length} Comments
             </h1>
             <form className="form-container">
               <div>
