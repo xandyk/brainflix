@@ -750,16 +750,20 @@ video {
             flex-direction: row;
   }
   .header__search-bar {
+    margin-left: 18vw;
     width: 32.8125vw;
   }
+  .header__search-icon {
+    left: 40vw;
+  }
   .upload__title {
-    margin-top: unset;
     padding-top: 48px;
   }
-  __img {
+  .upload__img {
     width: 44.79167vw;
+    height: 23.828125vw;
   }
-  __container {
+  .upload__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -771,14 +775,13 @@ video {
         -ms-flex-align: center;
             align-items: center;
   }
-  __input, __description {
-    font-size: 24px;
+  .upload__input, .upload__description {
+    font-size: 16px;
     padding-left: 35px;
   }
-  __publish, __cancel {
+  .upload__publish, .upload__cancel {
     width: 20.83vw;
     margin: 40px 0 0 6.25vw;
-    font-size: 22px;
   }
 }
 

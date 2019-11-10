@@ -76,33 +76,33 @@
 /* -------- Media Querry: Tablet -------- */
 @include medium {
 
-
 .header__container {
     height: 80px;
     margin: 2.083vw 3.125vw 0 3.125vw;
     display: flex;
-    flex-direction: row;
-
-   
+    flex-direction: row;  
 }
 
- .header__search-bar {
-        width: 32.8125vw;
-    }
+.header__search-bar {
+    margin-left: 18vw;
+    width: 32.8125vw;
+}
 
-    
+.header__search-icon {
+    left: 40vw;
+}
+
  .upload {
 
     &__title {
-    margin-top: unset;
     padding-top: 48px;
-}
     }
-
+    
     &__img {
-         width: 44.79167vw;
+    width: 44.79167vw;
+    height: 23.828125vw;
     }
-
+    
     &__container {
         display: flex;
         flex-direction: row-reverse;
@@ -110,18 +110,16 @@
     }
 
     &__input, &__description {
-        font-size: 24px;
+        font-size: 16px;
         padding-left: 35px;
     }
 
     &__publish, &__cancel {
         width: 20.83vw;
         margin: 40px 0 0 6.25vw;
-        font-size: 22px;
     }
-    }
-
-
+}
+}
 
 
 
@@ -134,6 +132,5 @@
 .upload {
     margin: 0 12.5vw;
 }
-
 
 }
