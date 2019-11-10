@@ -9,6 +9,7 @@
     }
 
     &__header {
+        font-size: 16px;
         color: $silver;
         margin-bottom: unset;
         margin-bottom: 10px;
@@ -22,7 +23,7 @@
     }
 
     &__label {
-        font-size: 13px;
+        font-size: 16px;
         color: $silver;
         margin: unset;
     }
@@ -127,10 +128,91 @@
 
 @include large {
 
+.header__container {
+    position: relative;
+    border-bottom: 2px solid $mercury;
+    margin-left: unset;
+    margin-right: unset;
+    padding: 0 12.5vw
+    }
 
+.header__search-bar {
+    width: 17.5vw;
+    position: relative;
+    }
+
+.header__search-icon {
+    position: absolute;
+    top: 62px;
+    left: 790px;
+    }
+}
+
+.header__search-content {
+    margin-left: 210.9px;
+}
 
 .upload {
     margin: 0 12.5vw;
+
+     &__title {
+        margin-top: 0;
+        border-top: none;
+        padding: 40px 0;
+        border-bottom: 2px solid $mercury;
+    }
+
+    &__header {
+        display: block;
+        width: 20%;
+        margin-top: 40px;
+        margin-bottom: unset;
+    }
+
+    &__img {
+        width: 23.89vw;
+        height: 12.70vw;
+    }
+
+    &__input {
+        display: inline-block;
+        height: 3.528vw;
+        width:  74.44vw;
+    }
+    
+    &__description {
+        display: inline-block;
+        height: 5.8vw;
+        width:  74.44vw;
+    }
 }
 
+
+.upload__wrap {
+    position: relative;
+    bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
+
+.upload__input, .upload__description {
+    display: inline-block;
+    width: 49vw;
+}
+
+
+.upload__button-container {
+    display: inline-block;
+    width: 50%;
+    display: flex;
+    flex-flow: row-reverse;
+    margin-left: 37.5vw;
+
+}
+
+.upload__publish, .upload__cancel {
+    margin-left: unset;
+    width: 11.11vw;
+}
+

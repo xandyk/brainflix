@@ -8,6 +8,7 @@ export default function Upload() {
         <h4 className="upload__header">VIDEO THUMBNAIL</h4>
         <img className="upload__img" src={uploadImg} alt="upload-video" />
 
+        git 
         <h4 className="upload__label">TITLE YOUR VIDEO</h4>
         <input
           className="upload__input"
@@ -23,7 +24,9 @@ export default function Upload() {
           type="text"
           value="Add a description of your video"
         ></input>
-        <div className="upload__container">
+        </div>
+        
+        <div className="upload__button-container">
           <button className="upload__publish">PUBSLISH</button>
           <button className="upload__cancel">CANCEL</button>
         </div>
