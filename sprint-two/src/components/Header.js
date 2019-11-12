@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return (
       <header className="header__container">
+        <Link to="/">
         <img className="header__logo" src={logo} alt="brainflix-logo" />
+        </Link>
         <div className="header__search-content">
           <input
-            className="header__search-bar"
+            className="header__search"
             type="text"
             plasceholder="search"
             value="Search"

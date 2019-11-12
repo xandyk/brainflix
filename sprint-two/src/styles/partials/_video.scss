@@ -1,14 +1,12 @@
-
-
 .video-header {
     color: $silver;
     margin: 40px 5vw;
     }
 
 .video {
-    display: flex;
+    // display: flex;
+    // flex-direction: row;
     margin: 0 5vw;
-
     
     &-img {        
     width: 37.5vw;
@@ -18,20 +16,30 @@
     }
 }
 
+.video-row {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
 .title-wrap {
+    float: right;
     margin-left: 5vw;
-    width: 50%;
+    width: 100vw;
 }
 
 .title {
+    text-decoration: none;
     margin: unset;
     font-size: 12px;
     line-height: 1.5;
-    // font-family: 'AvenirNextMedium';
+    width: 50vw;
+    color: $black;
 }
 
 .author {
     font-size: 12px;
+    color: $black;
 }
 
 
@@ -42,8 +50,6 @@
 .video {
     margin: 0 3.125vw;
     }
-
-
 
 .video-header {
     display: inline-block;

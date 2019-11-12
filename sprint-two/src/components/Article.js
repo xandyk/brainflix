@@ -19,7 +19,7 @@ export default function Main(props) {
         </section>
 
         <section className="section">
-          <h1 class="section__heading">{props.data.title}</h1>
+          <h1 className="section__heading">{props.data.title}</h1>
 
           <div className="author-date">
             <span className="author">{props.data.channel}</span>

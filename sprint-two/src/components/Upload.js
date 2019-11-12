@@ -1,14 +1,17 @@
 import React from 'react'
 import uploadImg from "../assets/Images/Upload-video-preview.jpg";
+import Header from './Header';
 
 export default function Upload() {
     return (
+    <>
+      <Header />
+
       <div className="upload">
         <h1 className="upload__title">Upload Video</h1>
         <h4 className="upload__header">VIDEO THUMBNAIL</h4>
         <img className="upload__img" src={uploadImg} alt="upload-video" />
 
-        git 
         <h4 className="upload__label">TITLE YOUR VIDEO</h4>
         <input
           className="upload__input"
@@ -30,6 +33,7 @@ export default function Upload() {
           <button className="upload__publish">PUBSLISH</button>
           <button className="upload__cancel">CANCEL</button>
         </div>
-      </div>
+    </>
+      
     );
 }

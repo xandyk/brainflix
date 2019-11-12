@@ -6,23 +6,31 @@
     &__logo {
     margin:  24px 0 24px;
     }
-  
 }
 
-.header__search-bar {
+.header__search {
     position: relative;
     width: 93.5vw;
     height: 48px;
     margin-bottom: 8px;
     border-radius: 5px;
+    padding-left: 40px;
 
     &-content {
     text-align: center;
+    margin-left: 0;
     }
 }
 
+
+.header__seach-content {
+    margin-left: 0;
+}
+
 .header__logo {
-    margin: 24px 0 24px;
+    padding: 24px 0;
+    display: flex;
+    margin: 0 auto;
 }
 
 .header__wrap-search {
@@ -35,18 +43,8 @@
 .header__search-icon {
     position: absolute;
     display: flex;
-    top: 90px;
-    left: 30px;
-}
-
-.header__search-bar {
-    padding-left: 40px;
-    font-size: 16px;
-        width: 100%;
-        border: 2px solid $mercury;
-        background-color: $alabaster;
-        border-radius: 5px;
-        padding: 0 48px;
+    top: 89px;
+    left: 28px;
 }
 
 .header__avatar-img {
@@ -82,12 +80,10 @@
     flex-direction: row;
     }
 
-
-
 .header__search-content {
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
     }
 
 .header__upload-btn {
@@ -105,14 +101,15 @@
     left: 324px;
     }
 
-.header__search-bar {
+.header__search {
     position: relative;
-    width: 32.8125vw;
     height: 48px;
     border-radius: 5px;
     margin-bottom: unset;
-    margin-left: 22.005vw;
     margin-right: 3.125vw;
+    margin-left: 22vw;
+    padding-left: 40px;
+    width: 30vw;
     }
 }
 
@@ -127,20 +124,20 @@
     flex-direction: row;
     }
 
-    .header__search-bar {
+    .header__search {
     position: relative;
     width: 20vw;
     height: 48px;
     border-radius: 5px;
     margin-bottom: unset;
-    margin-left: 35.3472vw;
+    // margin-left: 35.3472vw;
     margin-right: 3.125vw;
     }
 
     .header__search-icon {
     position: absolute;
-    top: 29px;
-    left: 824px;
+    top: 34px;
+    left: 630px;
     }
 
     .header__upload-btn {

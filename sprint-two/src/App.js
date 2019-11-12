@@ -1,13 +1,11 @@
-
-import Header from './components/Header';
 import Article from './components/Article';
 import CommentList from "./components/CommentList";
 import NextVideo from "./components/NextVideo";
 import React from 'react' //classes ->rcc
 import axios from 'axios';
+import Header from './components/Header';
 
 
-const url = "https://project-2-api.herokuapp.com/";
 const api_key = "?api_key=<ghost>";
 
 export default class App extends React.Component {
@@ -49,7 +47,7 @@ export default class App extends React.Component {
       console.log(this.state.sideVideos);
     return (
         <>
-         
+          <Header />
           <Article data={this.state.mainVideo} />
           <CommentList data={this.state.mainVideo.comments}  />
           <NextVideo data={this.state.sideVideos} videoID = {this.state.mainVideo.id}  />

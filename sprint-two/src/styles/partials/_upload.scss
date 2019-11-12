@@ -1,7 +1,6 @@
-
 .upload {
     margin: 0 3.125vw;
-    height: 140vw;
+    height: 340vw;
 
     &__title {
     border-top: 2px solid $mercury;
@@ -40,7 +39,7 @@
     }
 
     &__description {
-        height: 44.6875vw;
+        height: 20vw;
         width: 100%;
         border: 2px solid $mercury;
         background-color: $alabaster;
@@ -77,21 +76,19 @@
 /* -------- Media Querry: Tablet -------- */
 @include medium {
 
-.header__container {
-    height: 80px;
-    margin: 2.083vw 3.125vw 0 3.125vw;
-    display: flex;
-    flex-direction: row;  
-}
+// .header__container {
+//     height: 80px;
+//     margin: 2.083vw 3.125vw 0 3.125vw;
+//     display: flex;
+//     flex-direction: row;  
+// }
 
-.header__search-bar {
-    margin-left: 18vw;
-    width: 32.8125vw;
-}
+// .header__search-bar {
+//     margin-left: 18vw;
+//     width: 32.8125vw;
+// }
 
-.header__search-icon {
-    left: 40vw;
-}
+
 
  .upload {
 
@@ -122,35 +119,31 @@
 }
 }
 
-
-
 /* -------- Media Querry: Large -------- */
 
 @include large {
 
-.header__container {
-    position: relative;
-    border-bottom: 2px solid $mercury;
-    margin-left: unset;
-    margin-right: unset;
-    padding: 0 12.5vw
-    }
+// .header__container {
+//     position: relative;
+//     border-bottom: 2px solid $mercury;
+//     margin-left: unset;
+//     margin-right: unset;
+//     padding: 0 12.5vw
+//     }
 
-.header__search-bar {
-    width: 17.5vw;
-    position: relative;
-    }
+// .header__search-bar {
+//     width: 17.5vw;
+//     position: relative;
+//     }
 
-.header__search-icon {
-    position: absolute;
-    top: 62px;
-    left: 790px;
-    }
+// .header__search-icon {
+//     position: absolute;
+//     top: 62px;
+//     left: 790px;
+//     }
 }
 
-.header__search-content {
-    margin-left: 210.9px;
-}
+
 
 .upload {
     margin: 0 12.5vw;
@@ -213,6 +206,5 @@
 
 .upload__publish, .upload__cancel {
     margin-left: unset;
-    width: 11.11vw;
+    // width: 11.11vw;
 }
-
