@@ -1,0 +1,121 @@
+.video-header {
+    color: $silver;
+    margin: 40px 5vw;
+    }
+
+.video {
+    // display: flex;
+    // flex-direction: row;
+    margin: 0 5vw;
+    
+    &-img {        
+    width: 37.5vw;
+    height: 21.875vw;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    }
+}
+
+.video-row {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.title-wrap {
+    float: right;
+    margin-left: 5vw;
+    width: 100vw;
+}
+
+.title {
+    text-decoration: none;
+    margin: unset;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 50vw;
+    color: $black;
+}
+
+.author {
+    font-size: 12px;
+    color: $black;
+}
+
+
+
+/* -------- Media Querry: Tablet -------- */
+
+@include medium {
+.video {
+    margin: 0 3.125vw;
+    }
+
+.video-header {
+    display: inline-block;
+    width: 30vw;
+    margin: 40px 3.125vw;
+    }
+
+.video-img {        
+    width: 15.625vw;
+    height: 9.114583vw;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    }
+
+.title-wrap {
+    margin-left: 2.5vw;
+    width: 70%;
+    }
+
+.title, .author {
+    width: 40%;
+    font-size: 14px;
+    line-height: 1.4;
+    }
+
+.author {
+    font-family: 'AvenirNextRegular';
+}
+}
+
+/* -------- Media Querry: Desktop -------- */
+
+@include large {
+
+    .video-section {
+        float: right;  
+        position: absolute;
+        top: 961px;
+        left: 900px;
+    }
+
+    .video{ 
+        margin-left: unset;
+    }
+    
+    .video-header {
+        margin: unset;
+        margin-left: 1.667vw;
+        margin-bottom: 40px;
+    }
+
+    .video-img {
+        width: 8.3333vw;
+        height: 4.861vw;
+        margin-left: 1.667vw;
+        margin-right: 1.67vw;
+    }
+   
+    .title-wrap {
+        margin-left: unset;
+    }
+    
+    .title {
+        width: 70%;
+        font-size: 13px;
+    }
+
+   
+}
