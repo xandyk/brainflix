@@ -1,5 +1,5 @@
 import React from 'react'
-import reviewer from '../assets/Images/vg.png'
+import reviewer from '../assets/Images/Mohan-muruge.jpg'
 
 
 export default function CommentList(props) {
