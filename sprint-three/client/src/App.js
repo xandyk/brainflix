@@ -16,15 +16,15 @@ export default class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`https://project-2-api.herokuapp.com/videos${api_key}`)
+      .get(`http://localhost:5000/videos/`)
       .then(responseSideVideos => {
         axios
           .get(
-            `https://project-2-api.herokuapp.com/videos/${responseSideVideos.data[0].id}${api_key}`
+            `http://localhost:5000/videos/${responseSideVideos.data[0].id}`
           )
           .then(responseMainVideo => {
             this.setState({
-              mainVideo: responseMainVideo.data,
+              mainVideo: responseMainVideo.data[0],
               sideVideos: responseSideVideos.data
             });
           });
@@ -64,9 +64,9 @@ export default class App extends React.Component {
     if (prevProps !== this.props) {
     console.log(this.props.match.params)
 
-    axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.videoID}${api_key}`).then(response => {
+    axios.get(`http://localhost:5000/videos/${this.props.match.params.videoID}`).then(response => {
           this.setState({
-            mainVideo: response.data
+            mainVideo: response.data[0]
           })
           console.log(this.state.mainVideo);
         })

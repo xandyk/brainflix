@@ -22,7 +22,6 @@ export default function NextVideo(props) {
             </div>
           </Link>
         </div>
-      // </div>
       );}
     }
   );
